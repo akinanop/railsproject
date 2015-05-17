@@ -8,6 +8,8 @@ class UsersController < ApplicationController
     end
   end
 
+  def search
+  end
 
   def index
   @users = User.all

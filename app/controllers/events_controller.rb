@@ -17,6 +17,9 @@ class EventsController < ApplicationController
     @event = Event.new
   end
 
+  def search
+  end
+
   # GET /events/1/edit
   def edit
   end
