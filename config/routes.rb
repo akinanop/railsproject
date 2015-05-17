@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+<<<<<<< HEAD
   resources :events do 
     collection do 
       get "search"
@@ -6,6 +7,13 @@ Rails.application.routes.draw do
   end
   get "users" => "users#index"
   
+=======
+  devise_for :users
+  resources :events
+  get "search" => "events#search"
+  get "users" => "users#index"
+  get "sign_up" => "users#sign_up"
+>>>>>>> 94bf660fe548d5156a137d7637dd2e504ea83976
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -35,7 +43,7 @@ Rails.application.routes.draw do
 
   # Example resource route with sub-resources:
   #   resources :products do
-  #     resources :comments, :sales
+  #     resources :comments, :saless
   #     resource :seller
   #   end
 
