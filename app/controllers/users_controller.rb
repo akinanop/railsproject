@@ -1,26 +1,11 @@
 class UsersController < ApplicationController
 
-  before_action :authenticate
-
-  def authenticate
-    if not signed_in?
-      render :login
-    end
-  end
-
+  before_action :authenticate_user!
 
   def index
   @users = User.all
   end
 
-  def signed_in?
-    login = get
-    if get == "a"
-      true
-    else
-      false
-    end
-  end
 
 
 end
