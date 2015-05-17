@@ -1,14 +1,9 @@
 class User < ActiveRecord::Base
-<<<<<<< HEAD
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
 
-  def full_name
-   first_name + " " + last_name
-  end
-=======
 	def username
 		searchValue1 = parmas[:username]
 	end
@@ -56,6 +51,6 @@ class User < ActiveRecord::Base
 	def full_name
    searchValue4 + " " + searchValue5
 	end
->>>>>>> 39891ec054b5d51871fb82adcb435de7ae9ac0c8
+
 
 end

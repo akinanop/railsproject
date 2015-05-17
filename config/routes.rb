@@ -1,14 +1,9 @@
 Rails.application.routes.draw do
   devise_for :users
   resources :events
-<<<<<<< HEAD
   get "search" => "events#search"
-  #get "events" => "events#index"
-
-=======
   get "users" => "users#index"
   get "sign_up" => "users#sign_up"
->>>>>>> 39891ec054b5d51871fb82adcb435de7ae9ac0c8
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

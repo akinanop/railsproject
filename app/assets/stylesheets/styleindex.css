@@ -1,0 +1,26 @@
+body{
+  margin-top: -35px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+div.header {
+background: #33ccff;
+}
+
+h1 {
+  padding-top: 34px;
+  font-family: Futura;
+  color: white;
+  font-weight: lighter;
+  font-size: 30px;
+  padding-left: 40px;
+}
+
+#elementleft {
+  display:inline-block;
+  margin-right:800px;
+}
+#elementright {
+  display:inline-block;
+}

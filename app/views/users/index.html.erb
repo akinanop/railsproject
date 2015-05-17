@@ -1,10 +1,31 @@
-<h1>Registration form</h1>
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Welcome aboard!</title>
+  <link rel="stylesheet" href="styleindex.css"/>
+</head>
+<body>
+
+
+<div id="header" class="header">
+<h1>DO IT!/h1>
 <% @users.each do |user| %>
   <%= user.full_name %>     <%# things with = are shown in html%>
 <% end %>
-
+<div id="elementright">
 <form>
   <input type="text" placeholder="Email">
   <input type="password">
   <input type="submit">
 </form>
+</div>
+</div>
+
+<a href="">
+  <%= image_tag "organize.jpg" %> 
+
+</a>
+
+
+</body>
+</html>

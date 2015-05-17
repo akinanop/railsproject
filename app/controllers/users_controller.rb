@@ -10,12 +10,8 @@ class UsersController < ApplicationController
   @users = User.all
   end
 
-<<<<<<< HEAD
-=======
   def signed_in?
     true
   end
->>>>>>> 39891ec054b5d51871fb82adcb435de7ae9ac0c8
-
 
 end
