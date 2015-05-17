@@ -8,18 +8,16 @@ class UsersController < ApplicationController
     end
   end
 
+  def sign_up
+  end
+
 
   def index
   @users = User.all
   end
 
   def signed_in?
-    login = get
-    if get == "a"
-      true
-    else
-      false
-    end
+    true
   end
 
 
